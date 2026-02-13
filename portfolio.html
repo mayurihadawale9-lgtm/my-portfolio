@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mayuri Hadawale | Creative Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+html{
+  scroll-behavior:smooth;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* ===== Animated Galaxy Background ===== */
+body{
+  font-family:'Poppins',sans-serif;
+background: #3e4fa3;
+background: radial-gradient(circle, rgba(62, 79, 163, 1) 0%, rgba(252, 70, 107, 1) 100%);
+  color:black;
+}
+
+/* Navbar */
+.navbar{
+  background:rgba(12, 12, 12, 0.5)!important;
+  backdrop-filter:blur(10px);
+}
+
+.nav-link{
+  position:relative;
+}
+
+.nav-link::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:0%;
+  height:2px;
+  background:hsl(288, 24%, 96%);
+  transition:0.4s;
+}
+
+.nav-link:hover::after{
+  width:100%;
+}
+
+/* Hero */
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:3rem;
+  animation:glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+  from{ text-shadow:0 0 10px #ff6ec4;}
+  to{ text-shadow:0 0 20px #7873f5,0 0 30px #ff6ec4;}
+}
+
+/* Floating Image */
+.hero img{
+  height:230px;
+  width:230px;
+  border-radius:50%;
+  object-fit:cover;
+  border:5px solid white;
+  box-shadow:0 0 30px #080808;
+ 
+}
+
+
+/* Section */
+section{
+  padding:80px 0;
+  animation:fadeIn 1.2s ease-in;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(30px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* Section Title */
+section{
+  padding: 60px 30px;
+  margin: 50px auto;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 1100px;
+   background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+backdrop-filter: blur(12px);
+border: 1px solid b;
+
+}
+
+
+/* Cards */
+.card{
+  background:rgb(251, 251, 253);
+  backdrop-filter:blur(12px);
+  border:none;
+  border-radius:15px;
+  transition:0.4s;
+  color:rgb(10, 10, 10);
+}
+
+.card:hover{
+  transform:perspective(1000px) rotateY(8deg) scale(1.05);
+  box-shadow:0 15px 40px rgba(248, 7, 7, 0.6);
+}
+
+/* Skill Box */
+.skill-box{
+  padding:20px;
+  border-radius:15px;
+  background:wheat;
+  transition:0.3s;
+  color: #080808;
+}
+
+.skill-box:hover{
+  background:black;
+  transform:scale(1.05);
+  color: white;
+}
+
+/* Button */
+.btn-custom{
+  background:rgb(7, 60, 235);
+  color:#0bd1eb;
+  border-radius:25px;
+  padding:10px 25px;
+  position:relative;
+  overflow:hidden;
+  transition:0.4s;
+}
+
+.btn-custom::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:0%;
+  height:100%;
+  background:#0b08e2;
+  transition:0.4s;
+  z-index:-1;
+}
+
+.btn-custom:hover::before{
+  width:100%;
+}
+
+.btn-custom:hover{
+  color:white;
+}
+
+/* Footer */
+footer{
+  background:rgba(0,0,0,0.6);
+  padding:20px;
+  text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#"># Mayu Portfolio</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<section class="hero" id="home">
+<div class="container">
+<img src="WhatsApp Image 2026-01-31 at 11.33.16 AM.jpeg" alt="Profile">
+<h1 class="mt-4">Hi, I'm Mayuri Hadawale</h1>
+<p class="lead">Web Developer | Student | Full Stack Developer</p>
+<a href="#contact" class="btn btn-custom mt-3">Hire Me</a>
+</div>
+</section>
+
+<section id="about" class="text-center">
+<div class="container">
+<h2 class="section-title">About Me</h2>
+<p>Hello, my name is Mayuri Dnyaneshwar Hadawale. I am from Rajuri. Currently, I am in the final year of AIML (Artificial Intelligence and Machine Learning). I am studying at Samarth College of Engineering and Management.
+One month ago, I joined a Full Stack Developer course. I have successfully completed my Web Development module. Using the knowledge from this module, I have created my portfolio and a mini project.</p>
+</div>
+</section>
+
+<section id="skills" class="text-center">
+<div class="container">
+<h2 class="section-title">My Skills</h2>
+<div class="row">
+<div class="col-md-3"><div class="skill-box">HTML</div></div>
+<div class="col-md-3"><div class="skill-box">CSS</div></div>
+<div class="col-md-3"><div class="skill-box">Bootstrap</div></div>
+<div class="col-md-3"><div class="skill-box">JavaScript</div></div>
+</div>
+</div>
+</section>
+
+<section id="projects" class="text-center">
+<div class="container">
+<h2 class="section-title">Projects</h2>
+<div class="row">
+<div class="col-md-4">
+<div class="card p-3">
+<h5>Portfolio Website</h5>
+<p>Responsive personal website using modern design.</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card p-3">
+<h5>Notes 4 U</h5>
+<p>Notes 4 U using HTML, CSS, JS and Bootstrap.</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card p-3">
+<h5>Smart helmet accident detection and prevenstion</h5>
+<p>Smart helmet accident detection and prevenstion this project helps for rider protect a rider safty</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact --> 
+ <section class="py-5 text-center" id="contact">
+   <div class="container"> 
+    <h2 class="section-title">Contact Me</h2> 
+    <div class="row justify-content-center"> 
+      <div class="col-md-6"> 
+        <form> <input type="text" class="form-control mb-3" placeholder="Your Name"> 
+          <input type="email" class="form-control mb-3" placeholder="Your Email"> 
+          <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+           <button class="btn btn-primary w-100">Send Message</button>
+           </form> 
+          </div>
+         </div> 
+        </div> 
+      </section>
+<footer>
+<p>© 2026 Mayuri Hadawale | All Rights Reserved</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
